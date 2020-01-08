@@ -132,14 +132,14 @@ class App extends Component {
                   style={playButtonStyles}
                   onClick={this.startCycle}
                 >
-                  <i class="fas fa-play"> </i>
+                  <i className="fas fa-play"> </i>
                 </button>
                 <button
                   id="stopButton"
                   style={stopButtonStyles}
                   onClick={this.reset}
                 >
-                  <i class="fas fa-stop"> </i>
+                  <i className="fas fa-stop"> </i>
                 </button>
               </div>
             </div>
