@@ -2,4 +2,4 @@
 
 > React-based meditation app
 
-[demo](link.com)
+[demo](https://goofy-aryabhata-8ca49b.netlify.com/)
