@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 
+// class-based React component
 class App extends Component {
+
+    // declare key-value pairs for initial app state
     state = {
         count: 1,
         max: 10,
@@ -14,8 +17,13 @@ class App extends Component {
         stopVisibility: 'none'
     }
 
+    // set app state values back to default
     reset = () => {
+
+        // stops animation cycle
         clearInterval(this.interval);
+
+        // resets default values
         this.setState({
             count: 1,
             playing: 'paused',
@@ -27,6 +35,7 @@ class App extends Component {
         });
     }
 
+    // declare handler for changes to slider input
     onChange = (e) => {
         const name = e.target.name;
         const value = parseInt(e.target.value);
@@ -35,6 +44,7 @@ class App extends Component {
         this.reset();
     }
 
+    // declare function to start animation cycle
     startCycle = () => {
         this.setState({
             playing: 'running',
@@ -68,11 +78,12 @@ class App extends Component {
                     });
                 }
             }
-        }, 1000);
+        }, 1000);  // sets interval to 1 second
     }
 
     render() {
-
+        
+        // configure dynamic styles
         const ballStyles = {
             animationPlayState: this.state.playing,
             animationDuration: `${this.state.max}s`,
@@ -95,6 +106,7 @@ class App extends Component {
             display: this.state.stopVisibility
         }
 
+        // define app markup
         return (
           <div className="App">
             <div className="breath-msg">
@@ -146,6 +158,6 @@ class App extends Component {
           </div>
         );
     }
-}
+};
 
 export default App;
