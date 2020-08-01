@@ -23,7 +23,7 @@ When the user clicks 'stop' (or toggles the cycle-length with the slider during 
   * <code>onClick()</code>
   * JSX
 
-* JavaScript
+* JavaScript 
   * ES6 classes
   * ES6 arrow functions
   * ES6 destructuring assignment syntax
