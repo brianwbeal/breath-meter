@@ -1,18 +1,20 @@
 # React Breath Meter App
 
 > React-based meditation app built with create-react-app, deployed with netlify
+> 
+> Check out a live demo of the app here: [demo](https://goofy-aryabhata-8ca49b.netlify.com/)
 
-## Overview
+### Overview
 
-Using a single class-based component, the UI offers a slider input and 'play' button to start the animated mediation sequence.
+Using a single class-based component, the UI offers a slider input and 'play' button to start the animated meditation sequence.
 
 The slider input calls the <code>onChange()</code> handler to set the value of the app-state property <code>max</code> which sets the number of seconds in each inhale or exhale cycle.
 
-When the user clicks 'play', the <code>startCycle()</code> function is called and the state properties are set to begin the animation sequence. <code>setInterval()</code> is used to configure the cycle between inhalations (wherein the animated orb swells larger), and exhalations (wherein the animated orb contracts).
+When the user clicks 'play', the <code>startCycle()</code> function is called and the state properties are set to begin the animation sequence. <code>setInterval()</code> is used to configure the cycle period length between inhalations (wherein the animated orb swells larger), and exhalations (wherein the animated orb contracts).
 
 When the user clicks 'stop' (or toggles the cycle-length with the slider during the animation), the <code>reset()</code> function is called which reverts the app state property values to their defaults and stops animation.
 
-## Concepts
+### Concepts
 
 * React
   * create-react-app CLI
