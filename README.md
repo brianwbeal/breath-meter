@@ -6,6 +6,8 @@
 
 ### Overview
 
+<img src="./breath-screencap.png">
+
 Using a single class-based component, the UI offers a slider input and 'play' button to start the animated meditation sequence.
 
 The slider input calls the <code>onChange()</code> handler to set the value of the app-state property <code>max</code> which sets the number of seconds in each inhale or exhale cycle.
